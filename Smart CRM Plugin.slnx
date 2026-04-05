@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="CRM.Core/CRM.Core.csproj" />
+  <Project Path="CRM.Infrastructure/CRM.Infrastructure.csproj" />
+  <Project Path="CRM.Services.Abstraction/CRM.Services.Abstraction.csproj" />
+  <Project Path="CRM.Services/CRM.Services.csproj" />
+  <Project Path="CRM.Shared/CRM.Shared.csproj" />
+  <Project Path="Smart CRM Plugin/CRM.Smart.CRM.Plugin.API.csproj" />
+</Solution>
