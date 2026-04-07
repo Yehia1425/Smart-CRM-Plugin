@@ -39,6 +39,7 @@ namespace Smart_CRM_Plugin.Controllers
             return HandleResponse(result);
         }
         //Delete:BaseUrl/api/Customers/{id}
+        [HttpDelete("{id}")]
         public async Task<ActionResult<GenericeResponse<bool>>> DeleteCustomer(int id)
         {
             var result = await _customerServcies.DeleteAsync(id);

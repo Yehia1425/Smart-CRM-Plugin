@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace CRM.Core.Entities.ReminderEntity
 {
-    public class Reminder
+    public class Reminder:BaseEntity<int>
     {
-        public int Id { get; set; }
+
 
         public string Title { get; set; }
         public DateTime ReminderDate { get; set; }

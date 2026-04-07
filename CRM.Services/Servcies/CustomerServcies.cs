@@ -15,9 +15,9 @@ namespace CRM.Services.Servcies
     public class CustomerServcies:ICustomerServcies
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly ILogger _logger;
+        private readonly ILogger<CustomerServcies> _logger;
 
-        public CustomerServcies(IUnitOfWork unitOfWork,ILogger logger)
+        public CustomerServcies(IUnitOfWork unitOfWork,ILogger<CustomerServcies> logger)
         {
             _unitOfWork = unitOfWork;
             _logger = logger;

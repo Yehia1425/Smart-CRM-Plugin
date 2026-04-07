@@ -1,6 +1,7 @@
 using CRM.Core.Contracts;
 using CRM.Infrastructure.Data.Contexts;
 using CRM.Infrastructure.Repositores;
+using CRM.Services.Abstraction.Services;
 using CRM.Services.Servcies;
 using Microsoft.EntityFrameworkCore;
 using Smart_CRM_Plugin.Extensions;
@@ -20,6 +21,7 @@ builder.Services.AddDbContext<CRMdbContext>(options =>
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICustomerServcies, CustomerServcies>();
+builder.Services.AddScoped<IUserServices, UserServices>();
 
 var app = builder.Build();
 try
@@ -45,6 +47,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseStaticFiles();
 
 app.MapControllers();
 

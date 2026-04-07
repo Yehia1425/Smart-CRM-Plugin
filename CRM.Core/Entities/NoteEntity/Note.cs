@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace CRM.Core.Entities.NoteEntity
 {
-    public class Note
+    public class Note:BaseEntity<int>
     {
-        public int Id { get; set; }
 
         public string Content { get; set; }
 

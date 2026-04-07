@@ -8,9 +8,8 @@ using System.Threading.Tasks;
 
 namespace CRM.Core.Entities.InteractionEntity
 {
-    public class Interaction
+    public class Interaction:BaseEntity<int>
     {
-        public int Id { get; set; }
 
         public InteractionType Type { get; set; }
         public string Notes { get; set; }
